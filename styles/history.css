@@ -1,0 +1,12 @@
+button.history{
+  width: 40%;
+  height: 50px;
+}
+button.history:nth-child(3){
+  margin-left: 5px;
+}
+
+
+#history{
+  text-align: center;
+}

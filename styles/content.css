@@ -1,0 +1,14 @@
+.page{
+  display: none;
+  background-color: blue;
+  position:fixed;
+  top: 100px;
+  bottom: 40px;
+  left:5px;
+  right:5px;
+  overflow-y: scroll;
+}
+.page h2{
+  text-align: center;
+
+}
