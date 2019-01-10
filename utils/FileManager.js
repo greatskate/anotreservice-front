@@ -1,6 +1,34 @@
-var File = require("./objects/File").File
-var fs = require("fs");
 
+const fs = require('fs');
+const { File } = require('./objects/File');
+
+async function getFilesDirectoryRecursive(path, files) {
+	const dirs = fs.readdirSync(path, { withFileTypes: true })
+
+	if (dirs.length === 0) {
+		return true;
+	}
+
+	let newFiles = [];
+	for (let i = 0; i < dirs.length; i += 1) {
+		const directory = typeof (dirs[i]) === 'string'
+			? dirs[i]
+			: dirs[i].name;
+		const newPath = `${path}/${directory}`;
+		if (dirs[i].isDirectory()) {
+			newFiles = newFiles.concat(getFilesDirectoryRecursive(newPath, newFiles));
+		} else {
+			const text = fs.readFileSync(newPath, 'utf8');
+			const file = new File(newPath, text);
+			newFiles = newFiles.concat(file);
+		}
+	}
+	return files.concat(newFiles);
+}
+
+async function getAllFilesByDirectory(dir) {
+	return getFilesDirectoryRecursive(dir, []);
+}
 
 /*
   Take a directory name in parameter
@@ -20,37 +48,3 @@ var fs = require("fs");
   ]
 */
 module.exports.getAllFilesByDirectory = getAllFilesByDirectory;
-
-
-
-
-
-async function getAllFilesByDirectory(dir){
-  return await getFilesDirectoryRecursive(dir,[]);
-}
-
-async function getFilesDirectoryRecursive(path,files){
-  let dirs = fs.readdirSync(path,{withFileTypes:true})
-
-  if(dirs.length===0){
-    return true;
-  }
-  else{
-    let newFiles = [];
-    for(var i=0;i<dirs.length;i++){
-      const directory = typeof (dirs[i]) === 'string'
-  			? dirs[i]
-  			: dirs[i].name;
-      let newPath = path+"/"+directory;
-      if (dirs[i].isDirectory()){
-        newFiles = newFiles.concat(await getFilesDirectoryRecursive(newPath,newFiles));
-      }
-      else{
-          text = await fs.readFileSync(newPath,'utf8');
-          let file = new File(newPath,text);
-          newFiles = newFiles.concat(file);
-      }
-    }
-    return files.concat(newFiles);
-  }
-}

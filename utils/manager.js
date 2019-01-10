@@ -1,21 +1,14 @@
-var fs = require("fs");
-module.exports.importStyleScript = function importStyleScript(){
-  createHierarchy("styles",fs.readdirSync("./styles",{withFileTypes:true}))
+const fs = require('fs');
+const { getAllFilesByDirectory } = require('./FileManager')
+const { mergeFilesInOneFile } = require('./MergeManager')
+
+
+async function createStyle() {
+	const files = await getAllFilesByDirectory('styles');
+	const text = await mergeFilesInOneFile(files);
+	fs.appendFile('./build/style.css', text, (err) => {
+		if (err) throw err;
+	});
 }
 
-function createHierarchy(path,dirs){
-  if(dirs.length===0){
-    return true;
-  }
-  else{
-    for(var i=0;i<dirs.length;i++){
-      let newPath = path+"/"+dirs[i].name;
-      let newPathSource = "../"+newPath;
-      let newPathDestination = "../"+"build"+"/"+newPath;
-      fs.copyFile(newPathSource,newPathDestination,async (err)=>{
-        if (err) throw err;
-          return true;
-        });
-      }
-    }
-  }
+module.exports.createStyle = createStyle;
