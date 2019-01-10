@@ -31,7 +31,7 @@ function updateScroll(page){
 
         mainHeader.style.height = (100)+"px"
         page.style.top = (100)+"px"
-        title.style.top = 20+"%";
+        title.style.top = 10+"%";
         buttonLogin.style.width = 60+"px";
         buttonLogin.style.height = 60+"px";
         title.style.fontSize = (50)+"px";
