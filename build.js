@@ -95,8 +95,11 @@ async function build() {
 
 	fs.appendFile('./build/index.html', finalContent, (err) => {
 		if (err) throw err;
-		console.log('Build Completed!');
+		console.log('\n✅  Build Completed!\n'.green);
+		return Promise.resolve();
 	});
 }
 
-build();
+module.exports = {
+	build
+};
