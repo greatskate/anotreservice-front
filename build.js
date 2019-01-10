@@ -37,6 +37,9 @@ function deleteFolderRecursive(path) {
 	}
 }
 
+function importStyle(style) {
+	return `<link rel="stylesheet" href="./${style}">\n`
+}
 function importScript(script) {
 	return `<script src="./scripts/${script}"></script>\n`
 }
@@ -62,7 +65,7 @@ function importStyleScript() {
 	const scripts = fs.readdirSync('./scripts', { withFileTypes: true });
 	createHierarchy('scripts', scripts);
 	let generatedImport = '';
-	generatedImport += importScript('style.css');
+	generatedImport += importStyle('style.css');
 	for (let i = 0; i < scripts.length; i += 1) {
 		const script = scripts[i];
 		generatedImport += importScript(
