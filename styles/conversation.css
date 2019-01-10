@@ -10,8 +10,9 @@
 .conversation{
   position:relative;
   background-color: grey;
-  height: 150px;
+  height: 220px;
   margin-top: 5px;
+  font-size: 35px;
 }
 
 .conversation .profil_name{
@@ -21,7 +22,7 @@
 }
 .conversation .lastMessage{
   position: absolute;
-  top: 20px;
+  top: 40px;
   left: 130px;
   right: 0px;
 }

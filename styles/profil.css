@@ -1,31 +1,48 @@
+.profil{
+
+  font-size: 35px;
+}
 .profil .profil_picture{
   border-radius: 50%;
-  width: 100px;
-  height:100px;
+  width: 150px;
+  height: 150px;
   border: 1px solid black;
   position: absolute;
   top: 10px;
   left: 5px;
 }
-.profil{
-  position:relative;
-  height: 150px;
-  margin-top: 5px;
-}
-
-.profil .profil_name{
+.profil .main .bio{
   position: absolute;
-  top: 10px;
-  left: 130px;
+  left: 170px;
+  right: 5px;
+  top: 60px;
 }
-.profil .bio{
-  position: absolute;
-  top: 20px;
-  left: 130px;
-  right: 0px;
+.profil .main{
+  background-color: yellow;
+  position: relative;
+  height: 280px;
 }
-.profil .time{
+.profil .main .uev{
   position: absolute;
   bottom: 0px;
-  right: 30px;
+  left: 105px;
+}
+
+.profil .main .timeJoin{
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+}
+
+.profil .main .position{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+}
+.profil .communities{
+  background-color: orange;
+}
+
+.profil .commentaries{
+  background-color: purple;
 }

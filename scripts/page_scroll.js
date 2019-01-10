@@ -1,7 +1,7 @@
 window.addEventListener("load",initScrollPage);
 
 function initScrollPage(){
-  pages = document.getElementsByClassName("page")
+  pages = document.getElementsByClassName("page");
   mainHeader = document.getElementById("mainHeader");
   title = document.getElementById("title");
   buttonLogin = document.getElementsByClassName("login")[0];
@@ -17,26 +17,26 @@ function eventScrollPage(){
 }
 function updateScroll(page){
 
-    if (page.scrollTop < 50){
-      mainHeader.style.height = (100 - page.scrollTop)+"px"
-      page.style.top = (100 - page.scrollTop)+"px"
+    if (page.scrollTop < 100){
+      mainHeader.style.height = (200 - (page.scrollTop))+"px"
+      page.style.top = (200 - (page.scrollTop))+"px"
       title.style.top = (30 - (page.scrollTop/5))+"%";
-      title.style.fontSize = (35 - (page.scrollTop/5))+"px";
-      buttonLogin.style.width = (40-(page.scrollTop/5))+"px";
-      buttonLogin.style.height = (40-(page.scrollTop/5))+"px";
-      agenda.style.width = (40-(page.scrollTop/5))+"px";
-      agenda.style.height = (40-(page.scrollTop/5))+"px";
+      title.style.fontSize = (70 - ((page.scrollTop/5)))+"px";
+      buttonLogin.style.width = (80-((page.scrollTop/5)))+"px";
+      buttonLogin.style.height = (80-((page.scrollTop/5)))+"px";
+      agenda.style.width = (80-((page.scrollTop/5)))+"px";
+      agenda.style.height = (80-((page.scrollTop/5)))+"px";
     }
     else{
 
-        mainHeader.style.height = (100 - 50)+"px"
-        page.style.top = (100 - 50)+"px"
+        mainHeader.style.height = (100)+"px"
+        page.style.top = (100)+"px"
         title.style.top = 20+"%";
-        buttonLogin.style.width = 30+"px";
-        buttonLogin.style.height = 30+"px";
-        title.style.fontSize = (25)+"px";
-        agenda.style.width = 30+"px";
-        agenda.style.height = 30+"px";
+        buttonLogin.style.width = 60+"px";
+        buttonLogin.style.height = 60+"px";
+        title.style.fontSize = (50)+"px";
+        agenda.style.width = 60+"px";
+        agenda.style.height = 60+"px";
     }
 }
 function restorePages(){
