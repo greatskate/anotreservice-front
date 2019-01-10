@@ -38,7 +38,10 @@ async function getFilesDirectoryRecursive(path,files){
   else{
     let newFiles = [];
     for(var i=0;i<dirs.length;i++){
-      let newPath = path+"/"+dirs[i].name;
+      const directory = typeof (dirs[i]) === 'string'
+  			? dirs[i]
+  			: dirs[i].name;
+      let newPath = path+"/"+directory;
       if (dirs[i].isDirectory()){
         newFiles = newFiles.concat(await getFilesDirectoryRecursive(newPath,newFiles));
       }
