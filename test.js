@@ -1,11 +1,11 @@
-var { getAllFilesByDirectory } = require("./utils/FileManager");
-var { mergeFilesInOneFile } = require("./utils/MergeManager");
-var fs = require("fs");
+const fs = require('fs');
+const { getAllFilesByDirectory } = require('./utils/FileManager');
+const { mergeFilesInOneFile } = require('./utils/MergeManager');
 
-async function test(){
-  let files = await getAllFilesByDirectory("styles");
-  let text = await mergeFilesInOneFile(files);
-  fs.appendFile("./test/style.css",text,(err) => {
+async function test() {
+	const files = await getAllFilesByDirectory('styles');
+	const text = await mergeFilesInOneFile(files);
+	fs.appendFile('./build/style.css', text, (err) => {
 		if (err) throw err;
 	});
 }

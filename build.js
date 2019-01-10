@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { createStyle } = require('./utils/manager.js')
 
 
 function getFirstComponent(text) {
@@ -36,9 +37,6 @@ function deleteFolderRecursive(path) {
 	}
 }
 
-function importStyle(style) {
-	return `<link rel="stylesheet" href="./styles/${style}">\n`
-}
 function importScript(script) {
 	return `<script src="./scripts/${script}"></script>\n`
 }
@@ -61,19 +59,10 @@ async function createHierarchy(path, dirs) {
 }
 
 function importStyleScript() {
-	const styles = fs.readdirSync('./styles', { withFileTypes: true });
 	const scripts = fs.readdirSync('./scripts', { withFileTypes: true });
-	createHierarchy('styles', styles);
 	createHierarchy('scripts', scripts);
 	let generatedImport = '';
-	for (let i = 0; i < styles.length; i += 1) {
-		const style = styles[i];
-		generatedImport += importStyle(
-			typeof (style) === 'string'
-				? style
-				: styles[i].name
-		);
-	}
+	generatedImport += importScript('style.css');
 	for (let i = 0; i < scripts.length; i += 1) {
 		const script = scripts[i];
 		generatedImport += importScript(
@@ -92,7 +81,7 @@ async function build() {
 	const generatedImport = await importStyleScript();
 	const result = content.split('<head>')
 	const finalContent = `${result[0]}<head>\n${generatedImport}\n${result[1]}`
-
+	createStyle();
 	fs.appendFile('./build/index.html', finalContent, (err) => {
 		if (err) throw err;
 		console.log('\n✅  Build Completed!\n'.green);
