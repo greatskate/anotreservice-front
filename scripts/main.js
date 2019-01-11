@@ -5,7 +5,7 @@ function initMain(){
   logged = false;
   loggedComponents = document.getElementsByClassName("logged");
   pages = document.getElementsByClassName("page");
-  logout();
+  login();
   load();
 }
 
