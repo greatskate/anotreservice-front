@@ -2,7 +2,7 @@
   position:fixed;
   left:0px;
   right:0px;
-  height: 130px;
+  height: 70px;
   bottom:0px;
   background-color: red;
   margin:0px;
@@ -31,54 +31,54 @@
   position: absolute;
   background: url("https://pngimage.net/wp-content/uploads/2018/06/logo-profil-png-1.png");
   background-size: 100% 100%;
-  height: 100px;
-  width: 150px;
+  height: 50px;
+  width: 75px;
   left:50%;
   top:0px;
-  margin-left: -75px;
+  margin-left: -37.5px;
 }
 
 #menu ul li #pictureMessagesNav{
   position: absolute;
     background: url("https://www.logolynx.com/images/logolynx/ac/acb81e9f6b742f8bba9bccd11dec51e9.png");
     background-size: 100% 100%;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     left: 50%;
     top: 0px;
-    margin-left: -40px;
+    margin-left: -20px;
 }
 
 #menu ul li #pictureHomeNav{
   position: absolute;
     background: url("https://brandmark.io/intro/home.png");
     background-size: 100% 100%;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     left: 50%;
     top: 0px;
-    margin-left: -40px;
+    margin-left: -20px;
 }
 
 #menu ul li #pictureCommunitiesNav{
   position: absolute;
     background: url("https://freeiconshop.com/wp-content/uploads/edd/chat-double-outline.png");
     background-size: 100% 100%;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     left: 50%;
     top: 0px;
-    margin-left: -40px;
+    margin-left: -20px;
 }
 #menu ul li #pictureHistoryNav{
   position: absolute;
     background: url("https://cdn0.iconfinder.com/data/icons/iconico-3/1024/63.png");
     background-size: 100% 100%;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     left: 50%;
     top: 0px;
-    margin-left: -40px;
+    margin-left: -20px;
 }
 
 #menu ul li span{
@@ -86,5 +86,5 @@
     bottom: 18px;
     left: 0px;
     width: 100%;
-    font-size: 29px;
+    font-size: 12px;
 }

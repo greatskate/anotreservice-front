@@ -18,31 +18,31 @@
   position: absolute;
   top: 10px;
   left: 180px;
-  font-size: 35px;
+  font-size: 25px;
 }
 .service .description{
   position: absolute;
   top: 42px;
   left: 170px;
-  font-size: 35px;
+  font-size: 17px;
   right: 0px;
 }
 .service .uev{
   position: absolute;
   bottom: 0px;
   left: 30px;
-  font-size: 35px;
+  font-size: 17px;
 }
 .service .square{
   position: absolute;
   bottom: 0px;
   right: 30px;
-  font-size: 35px;
+  font-size: 17px;
 }
 .service .time{
   position: absolute;
   bottom: 0px;
   left: 50%;
   margin-left: -20px;
-  font-size: 35px;
+  font-size: 17px;
 }

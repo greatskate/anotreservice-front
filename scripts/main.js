@@ -13,7 +13,7 @@ function login(){
   }
   if(!logged){
     for (var i= 0;i<pages.length;i++){
-      pages[i].style.bottom = "130px";
+      pages[i].style.bottom = "";
     }
   }
 }

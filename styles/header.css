@@ -4,7 +4,7 @@ header{
   top: 0px;
   left:0px;
   right:0px;
-  height:200px;
+  height:100px;
 }
 header h1{
   text-align: center;
@@ -13,14 +13,14 @@ header h1{
   top:30%;
   left:0px;
   width:100%;
-  font-size: 70px;
+  font-size: 40px;
 }
 
 header .login{
   background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Simpleicons_Interface_power-symbol-1.svg/langfr-280px-Simpleicons_Interface_power-symbol-1.svg.png");
   background-size: 100%;
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   right: 10px;
   top: 10px;

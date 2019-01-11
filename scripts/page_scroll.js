@@ -18,25 +18,25 @@ function eventScrollPage(){
 function updateScroll(page){
 
     if (page.scrollTop < 100){
-      mainHeader.style.height = (200 - (page.scrollTop))+"px"
-      page.style.top = (200 - (page.scrollTop))+"px"
+      mainHeader.style.height = (100 - (page.scrollTop)/2)+"px"
+      page.style.top = (100 - (page.scrollTop)/2)+"px"
       title.style.top = (30 - (page.scrollTop/5))+"%";
-      title.style.fontSize = (70 - ((page.scrollTop/5)))+"px";
-      buttonLogin.style.width = (80-((page.scrollTop/5)))+"px";
-      buttonLogin.style.height = (80-((page.scrollTop/5)))+"px";
-      agenda.style.width = (80-((page.scrollTop/5)))+"px";
-      agenda.style.height = (80-((page.scrollTop/5)))+"px";
+      title.style.fontSize = (35 - ((page.scrollTop/10)))+"px";
+      buttonLogin.style.width = (40-((page.scrollTop/5)))+"px";
+      buttonLogin.style.height = (40-((page.scrollTop/5)))+"px";
+      agenda.style.width = (40-((page.scrollTop/5)))+"px";
+      agenda.style.height = (40-((page.scrollTop/5)))+"px";
     }
     else{
 
-        mainHeader.style.height = (100)+"px"
-        page.style.top = (100)+"px"
+        mainHeader.style.height = (50)+"px"
+        page.style.top = (50)+"px"
         title.style.top = 10+"%";
-        buttonLogin.style.width = 60+"px";
-        buttonLogin.style.height = 60+"px";
-        title.style.fontSize = (50)+"px";
-        agenda.style.width = 60+"px";
-        agenda.style.height = 60+"px";
+        buttonLogin.style.width = 20+"px";
+        buttonLogin.style.height = 20+"px";
+        title.style.fontSize = (25)+"px";
+        agenda.style.width = 20+"px";
+        agenda.style.height = 20+"px";
     }
 }
 function restorePages(){
