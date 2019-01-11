@@ -1,5 +1,5 @@
 /* eslint-disable */
-window.addEventListener("load",initNav)
+
 function initNav()
 {
   pages = document.getElementsByClassName("page");

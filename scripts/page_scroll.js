@@ -1,5 +1,4 @@
 /* eslint-disable */
-window.addEventListener("load",initScrollPage);
 
 function initScrollPage(){
   pages = document.getElementsByClassName("page");
