@@ -5,7 +5,7 @@ function initMain(){
   logged = false;
   loggedComponents = document.getElementsByClassName("logged");
   pages = document.getElementsByClassName("page");
-  logout();
+  login();
   load();
 }
 
@@ -37,6 +37,8 @@ function load(){
   conversationsList = document.getElementById("conversationsList");
   historyList = document.getElementById("historyList");
   commentariesList = document.getElementById("commentariesList");
+  listCommunityInProfil = document.getElementById("listCommunityInProfil");
+  listCommunityInCommunities = document.getElementById("listCommunityInCommunities");
   let service1 = service({
     url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
     profil_name:"Stephane",
@@ -52,6 +54,13 @@ function load(){
     time:"1h30",
   })
   let commentary1 = commentary({profil_name:"Stephane",text:"Genial experience avec moi meme !"})
+  let community_small1 = community_small({
+    name:"Jardinage et potager",
+    description:"Bonjour, ici se retrouvent tous les fans de potager et de jardinage, conseils,services zefzefzefze zefzefzef zfefethyre",
+    members:256,
+    partages:178,
+    square:"Lille"
+  })
   conversationsList.innerHTML =
    conversation1 +
    conversation1 +
@@ -74,4 +83,17 @@ function load(){
   commentary1 +
   commentary1
 
+  listCommunityInProfil.innerHTML=
+  community_small1 +
+  community_small1 +
+  community_small1 +
+  community_small1 +
+  community_small1
+
+  listCommunityInCommunities.innerHTML =
+  community_small1 +
+  community_small1 +
+  community_small1 +
+  community_small1 +
+  community_small1
 }

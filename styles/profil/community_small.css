@@ -1,0 +1,48 @@
+
+.community_small{
+  background-color: white;
+  margin-bottom: 5px;
+  height: 130px;
+  position:relative;
+}
+.community_small .picture{
+	background-image :url("https://cdn.icon-icons.com/icons2/317/PNG/512/flower-icon_34420.png");
+	background-size:100% 100%;
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	position:absolute;
+
+}
+.community_small .name{
+	top: 0px;
+	left: 100px;
+	position:absolute;
+
+}
+.community_small .description{
+	top: 30px;
+	left: 70px;
+	position:absolute;
+
+}
+.community_small .members{
+	bottom: 0px;
+	left: 40px;
+	position:absolute;
+
+}
+
+.community_small .partages{
+	bottom: 0px;
+	left: 50%;
+	margin-left:-20px;
+	position:absolute;
+
+}
+.community_small .square{
+	bottom: 0px;
+	right: 40px;
+	position:absolute;
+
+}
