@@ -36,6 +36,7 @@ function load(){
   serviceOnHome = document.getElementById("serviceOnHome");
   conversationsList = document.getElementById("conversationsList");
   historyList = document.getElementById("historyList");
+  commentariesList = document.getElementById("commentariesList");
   let service1 = service({
     url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
     profil_name:"Stephane",
@@ -50,6 +51,7 @@ function load(){
     last_message:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     time:"1h30",
   })
+  let commentary1 = commentary({profil_name:"Stephane",text:"Genial experience avec moi meme !"})
   conversationsList.innerHTML =
    conversation1 +
    conversation1 +
@@ -64,4 +66,12 @@ function load(){
   service1 +
   service1 +
   service1;
+
+  commentariesList.innerHTML =
+  commentary1 +
+  commentary1 +
+  commentary1 +
+  commentary1 +
+  commentary1
+
 }
