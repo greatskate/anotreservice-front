@@ -16,7 +16,7 @@ async function getFilesDirectoryRecursive(path, files) {
 			: dirs[i].name;
 		const newPath = `${path}/${directory}`;
 		if (dirs[i].isDirectory()) {
-			newFiles = newFiles.concat(getFilesDirectoryRecursive(newPath, newFiles));
+			newFiles = newFiles.concat(await getFilesDirectoryRecursive(newPath, newFiles));
 		} else {
 			const text = fs.readFileSync(newPath, 'utf8');
 			const file = new File(newPath, text);
