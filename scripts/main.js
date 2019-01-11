@@ -32,7 +32,7 @@ function logout(){
   for (var i= 0;i<loggedComponents.length;i++){
     loggedComponents[i].style.display = "none";
   }
-  if(!logged){
+  if(logged){
     for (var i= 0;i<pages.length;i++){
       pages[i].style.bottom = "0px";
     }

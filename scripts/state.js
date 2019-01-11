@@ -1,1 +1,1 @@
-logged = false;
+logged = true;
