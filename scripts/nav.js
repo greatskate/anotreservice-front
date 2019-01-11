@@ -1,3 +1,4 @@
+/* eslint-disable */
 window.addEventListener("load",initNav)
 function initNav()
 {

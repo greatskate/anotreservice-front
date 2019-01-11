@@ -1,3 +1,4 @@
+/* eslint-disable */
 window.addEventListener("load",initMain)
 
 function initMain(){
@@ -5,6 +6,7 @@ function initMain(){
   loggedComponents = document.getElementsByClassName("logged");
   pages = document.getElementsByClassName("page");
   logout();
+  load();
 }
 
 function login(){
@@ -28,4 +30,38 @@ function logout(){
     }
   }
 
+}
+
+function load(){
+  serviceOnHome = document.getElementById("serviceOnHome");
+  conversationsList = document.getElementById("conversationsList");
+  historyList = document.getElementById("historyList");
+  let service1 = service({
+    url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
+    profil_name:"Stephane",
+    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    uev:150,
+    time:"1h30",
+    square:"Lille"})
+  serviceOnHome.outerHTML = service1;
+  let conversation1 = conversation({
+    url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
+    profil_name:"Stephane",
+    last_message:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    time:"1h30",
+  })
+  conversationsList.innerHTML =
+   conversation1 +
+   conversation1 +
+   conversation1 +
+   conversation1 +
+   conversation1
+  ;
+  historyList.innerHTML =
+  service1 +
+  service1 +
+  service1 +
+  service1 +
+  service1 +
+  service1;
 }

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { createStyle } = require('./utils/manager.js')
-
+const { loadObject } = require('./utils/ObjectCreator');
 
 function getFirstComponent(text) {
 	if (text.includes('{%')) {
@@ -74,6 +74,7 @@ function importStyleScript() {
 				: script.name
 		);
 	}
+	generatedImport += importScript('creator.js');
 	return generatedImport;
 }
 
@@ -85,6 +86,8 @@ async function build() {
 	const result = content.split('<head>')
 	const finalContent = `${result[0]}<head>\n${generatedImport}\n${result[1]}`
 	createStyle();
+
+	loadObject();
 	fs.appendFile('./build/index.html', finalContent, (err) => {
 		if (err) throw err;
 		console.log('\n✅  Build Completed!\n'.green);
