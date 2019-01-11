@@ -46,3 +46,8 @@
 .profil .commentaries{
   background-color: purple;
 }
+
+.profil .communities h3{
+  width:50%;
+  display: inline-block;
+}
