@@ -11,15 +11,20 @@ function initScrollListener() {
 }
 
 function getIntermediateValue(minValue, maxValue, accordingTo) {
-	return maxValue - ((maxValue-minValue)*(accordingTo/100))
+	const value = maxValue - ((maxValue-minValue)*(accordingTo/100));
+	if (value < minValue) {
+		return minValue;
+	}
+	if (value > maxValue) {
+		return maxValue;
+	}
+	return value;
 }
 
 function handleScrollEvent() {
 	const { scrollY: scrollTop } = window;
-	if (scrollTop < 100) {
-		mainHeader.style.height = `${getIntermediateValue(50, 75, scrollTop)}px`;
-		title.style['font-size'] = `${getIntermediateValue(15, 17.5, scrollTop)}px`;
-	}
+	mainHeader.style.height = `${getIntermediateValue(50, 75, scrollTop)}px`;
+	title.style['font-size'] = `${getIntermediateValue(15, 17.5, scrollTop)}px`;
 }
 
 function restorePages() {
