@@ -3,21 +3,25 @@ window.addEventListener("load",initMain)
 
 function initMain(){
   loggedComponents = document.getElementsByClassName("logged");
+  logoutComponents = document.getElementsByClassName("logout_component");
   pages = document.getElementsByClassName("page");
   login_button.addEventListener("click",openLoginDialog);
   login_darken_layer_dialog.addEventListener("click",closeLoginDialog);
   login_button_container.addEventListener("click",closeLoginDialog);
 
-  logout();
   load();
   initScrollPage()
-  initNav()
+  logout();
   initLogin()
   initCommunities()
+  initNav()
 }
 function login(){
   for (var i= 0;i<loggedComponents.length;i++){
     loggedComponents[i].style.display = "block";
+  }
+  for (var i= 0;i<logoutComponents.length;i++){
+    logoutComponents[i].style.display = "none";
   }
   if(!logged){
     for (var i= 0;i<pages.length;i++){
@@ -32,12 +36,16 @@ function logout(){
   for (var i= 0;i<loggedComponents.length;i++){
     loggedComponents[i].style.display = "none";
   }
-  if(logged){
+  for (var i= 0;i<logoutComponents.length;i++){
+    logoutComponents[i].style.display = "block";
+  }
+  if(!logged){
     for (var i= 0;i<pages.length;i++){
       pages[i].style.bottom = "0px";
     }
   }
 
+      showPage("home");
   logged = false;
 
 }
