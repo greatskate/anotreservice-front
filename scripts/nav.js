@@ -4,16 +4,15 @@ function initNav()
 {
   pages = document.getElementsByClassName("page");
   menus = document.getElementsByClassName("menu");
-  for (var i=0;i<menus.length;i++){
+  for (let i = 0; i < menus.length; i += 1){
     menus[i].addEventListener("click",eventClickShowPage);
   }
   showPage("home")
 }
 
 function eventClickShowPage(){
-
   restorePages();
-  for (var i=0; i<pages.length;i++){
+  for (var i = 0; i < pages.length;i += 1){
     if (this.dataset.page === pages[i].dataset.page){
       pages[i].style.display = "block";
     }

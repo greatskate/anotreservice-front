@@ -1,7 +1,6 @@
 /* eslint-disable */
 
 function initLogin(){
-
   login_button = document.getElementById("login_button")
   login_dialog = document.getElementById("login_dialog");
   login_darken_layer_dialog = document.getElementById("login_darken_layer_dialog");
@@ -17,7 +16,8 @@ function initLogin(){
 
 function openLoginDialog(){
   if(!logged){
-    login_dialog.style.display="flex";
+		login_dialog.style.opacity = 1;
+		login_dialog.style['pointer-events'] = 'all';
   }
   else{
     logout();
@@ -25,8 +25,10 @@ function openLoginDialog(){
 }
 
 function closeLoginDialog(){
-  login_dialog.style.display="none";
+	login_dialog.style.opacity = 0;
+	login_dialog.style['pointer-events'] = 'none';
 }
+
 function loginEvent(){
   closeLoginDialog();
   login();

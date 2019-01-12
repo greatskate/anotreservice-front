@@ -10,14 +10,14 @@ function initMain(){
 
   logout();
   load();
-  initScrollPage()
+  initScrollListener()
   initNav()
   initLogin()
   initCommunities()
 }
 function login(){
   for (var i= 0;i<loggedComponents.length;i++){
-    loggedComponents[i].style.display = "block";
+    loggedComponents[i].style.display = "flex";
   }
   if(!logged){
     for (var i= 0;i<pages.length;i++){
