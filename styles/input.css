@@ -11,6 +11,7 @@
 }
 
 .inputs_group .input_container {
+	width: 100%;
 	border: 1px solid #efefef;
 	border-top: none;
 }
@@ -19,6 +20,7 @@
 	padding: 0 17.5px;
 	border: 1px solid #efefef;
 	display: flex;
+	background-color: #f8f8f8;
 }
 
 .input_icon_container {
@@ -34,4 +36,5 @@
 	flex: 1;
 	border: none;
 	padding: 0 5px;
+	background-color: transparent;
 }

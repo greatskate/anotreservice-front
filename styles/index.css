@@ -18,7 +18,14 @@ body {
 }
 
 a {
-	textDecoration: none !important;
+	text-decoration: none !important;
+}
+
+select {
+	background-color: #f8f8f8;
+	border-color: #efefef;
+	border-radius: 4px;
+	padding: 12.5px 15px;
 }
 
 *:focus {
