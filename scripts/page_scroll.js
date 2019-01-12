@@ -7,7 +7,6 @@ function initScrollListener() {
 	buttonLogin = document.getElementsByClassName('login')[0];
 	agenda = document.getElementById('agenda');
 	scroll = 0;
-	console.log(document.body);
 	window.addEventListener('scroll', handleScrollEvent);
 }
 
@@ -17,7 +16,6 @@ function getIntermediateValue(minValue, maxValue, accordingTo) {
 
 function handleScrollEvent() {
 	const { scrollY: scrollTop } = window;
-	console.log(scrollTop);
 	if (scrollTop < 100) {
 		mainHeader.style.height = `${getIntermediateValue(50, 75, scrollTop)}px`;
 		title.style['font-size'] = `${getIntermediateValue(15, 17.5, scrollTop)}px`;

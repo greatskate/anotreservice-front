@@ -33,4 +33,6 @@ a {
 
 .material-icons {
 	color: #3f3f3f;
+	transition: color 300ms;
+	will-change: color;
 }
