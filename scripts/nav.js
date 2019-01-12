@@ -12,6 +12,7 @@ function eventClickShowPage() {
 	showPage(this.dataset.page);
 }
 function showPage(page) {
+	console.log(page);
 	restorePages();
 	let returnPage = null;
 	// ⬇️ Changing nav icons' colors.
