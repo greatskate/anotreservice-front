@@ -12,10 +12,12 @@ function initMain(){
   load();
   initScrollListener()
   initNav();
-	logout();
+	// logout();
   initLogin()
   initCommunities()
   initNav()
+	loggued = true;
+	showPage('profil');
 }
 function login(){
   for (var i= 0;i<loggedComponents.length;i++){
@@ -30,7 +32,7 @@ function login(){
     }
   }
 
-    logged = true;
+  logged = true;
 }
 
 function logout(){
@@ -46,7 +48,7 @@ function logout(){
     }
   }
 
-      showPage("home");
+  showPage("home");
   logged = false;
 
 }
