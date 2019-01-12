@@ -12,23 +12,19 @@ function initNav()
 
 function eventClickShowPage(){
 
-  restorePages();
-  for (var i=0; i<pages.length;i++){
-    if (this.dataset.page === pages[i].dataset.page){
-      pages[i].style.display = "block";
-    }
-    else{
-      pages[i].style.display = "none";
-    }
-  }
+    showPage(this.dataset.page);
 }
 function showPage(page){
+  restorePages();
+  let returnPage = null
   for (var i=0; i<pages.length;i++){
     if (page === pages[i].dataset.page){
       pages[i].style.display = "block";
+      returnPage = pages[i];
     }
     else{
       pages[i].style.display = "none";
     }
   }
+  return returnPage
 }
