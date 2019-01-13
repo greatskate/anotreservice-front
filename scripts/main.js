@@ -28,7 +28,7 @@ function login(){
   }
   if(!logged){
     for (var i= 0;i<pages.length;i++){
-      pages[i].style.bottom = "";
+      pages[i].style.marginBottom = "";
     }
   }
 
@@ -42,9 +42,9 @@ function logout(){
   for (var i= 0;i<logoutComponents.length;i++){
     logoutComponents[i].style.display = "block";
   }
-  if(!logged){
+  if(logged){
     for (var i= 0;i<pages.length;i++){
-      pages[i].style.bottom = "0px";
+      pages[i].style.marginBottom = "0px";
     }
   }
 
