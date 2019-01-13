@@ -1,7 +1,6 @@
 .button_container {
-	margin: 0 4px;
-	color: #2196f3;
-	padding: 4px 6px;
+	padding: 4px 10px;
+	width: fit-content;
 	min-width: 64px;
 	min-height: 36px;
 	text-transform: uppercase;
@@ -10,9 +9,27 @@
 	font-weight: 500;
 	border-radius: 4px;
 	color: #444;
-	position: relative,
+	position: relative;
 	overflow: hidden;
-	font-size: 13px;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	transition: background-color 300ms ease;
+	will-change: background-color;
+}
+
+.button_container:hover:not(.button_container_raised) {
+	background-color: rgba(0, 0, 0, .1)
+}
+
+.button_container_primary {
+	color: #2196f3;
+}
+
+.button_container_raised {
+	background-color: #2196f3;
+	color: #fff;
+	padding: 4px 14px;
+	box-shadow: 0 10px 25px rgba(29,29,31,0.15);
 }

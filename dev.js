@@ -47,8 +47,10 @@ const init = () => build()
 		lastBuild = (new Date()).getTime();
 		app.use(express.static(`${__dirname}/build`));
 
-		app.listen(8000, () => {
-			console.log('App listening on port 8000.')
+		const { PORT = 8000 } = process.env;
+
+		app.listen(PORT, () => {
+			console.log(`App listening on port ${PORT}.`)
 		});
 
 		const client = new watchman.Client();

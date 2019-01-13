@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node -e \"require('./build').build()\"",
-    "start": "node start"
+    "dev": "node dev",
+		"start": "npm run build && node serve_prod"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",

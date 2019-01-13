@@ -10,15 +10,18 @@ function initMain(){
   login_button_container.addEventListener("click",closeLoginDialog);
 
   load();
-  initScrollPage()
-  logout();
+  initScrollListener()
+  initNav();
+	// logout();
   initLogin()
   initCommunities()
   initNav()
+	loggued = true;
+	showPage('profil');
 }
 function login(){
   for (var i= 0;i<loggedComponents.length;i++){
-    loggedComponents[i].style.display = "block";
+    loggedComponents[i].style.display = "flex";
   }
   for (var i= 0;i<logoutComponents.length;i++){
     logoutComponents[i].style.display = "none";
@@ -29,7 +32,7 @@ function login(){
     }
   }
 
-    logged = true;
+  logged = true;
 }
 
 function logout(){
@@ -45,7 +48,7 @@ function logout(){
     }
   }
 
-      showPage("home");
+  showPage("home");
   logged = false;
 
 }

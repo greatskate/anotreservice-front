@@ -1,6 +1,7 @@
-To create a build run:
+3 simple steps to follow:
 
-node build.js
+1) Clone the repository.
+2) `npm run dev` si on veut dev, sinon `npm run start`.
+3)
 
-after that open the index.html file in the build directory
-
+![](https://media.giphy.com/media/14kdiJUblbWBXy/giphy.gif)

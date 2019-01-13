@@ -6,6 +6,10 @@ html,body {
 	font-weight: 400;
 }
 
+body {
+	padding-top: 75px;
+}
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -14,7 +18,14 @@ html,body {
 }
 
 a {
-	textDecoration: none !important;
+	text-decoration: none !important;
+}
+
+select {
+	background-color: #f8f8f8;
+	border-color: #efefef;
+	border-radius: 4px;
+	padding: 12.5px 15px;
 }
 
 *:focus {
@@ -29,4 +40,21 @@ a {
 
 .material-icons {
 	color: #3f3f3f;
+	transition: color 300ms;
+	will-change: color;
+}
+
+.page_title {
+	font-size: 26px;
+	color: #2f2f2f;
+	margin: 20px;
+	font-weight: 500;
+}
+
+.card {
+	background-color: #fff;
+	padding: 15px;
+	margin: 20px;
+	border-radius: 4px;
+	box-shadow: 0 10px 25px rgba(29,29,31,0.15);
 }

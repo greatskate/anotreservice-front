@@ -1,0 +1,26 @@
+#community_form {
+	position: relative;
+	animation: fade-in 300ms;
+	will-change: opacity;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#community_form > .inputs_group {
+	width: 100%;
+}
+
+#community_form > .button_container {
+	float: right;
+	border: none;
+}
+
+#community_select {
+	width: 100%;
+	margin-top: 10px;
+}
+
+#community_button {
+	margin-top: 15px;
+}

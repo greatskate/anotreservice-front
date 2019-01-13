@@ -7,7 +7,7 @@ function initCommunities(){
   buttonJoinForLogin = null
   loadEventCommunities();
   for (var i=0; i<communitySearchForms.length;i++){
-    communitySearchForms[i].addEventListener("submit",eventSubmitCommunitySearchForm)
+    communitySearchForms[i].addEventListener("submit", eventSubmitCommunitySearchForm)
   }
 }
 function openCommunity(){
