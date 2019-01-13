@@ -5,10 +5,10 @@ function loadCommunities(){
 }
 
 function loadCommunity(){
-  let community = Object.assign({},JARDIN_ET_POTAGER_SMALL);
+  let community = Object.assign({},JARDIN_ET_POTAGER);
   let messagesHTML = ""
   for (var i=0;i<community.messages.length;i++){
-    messagesHTML += service(JARDIN_ET_POTAGER_SMALL.messages[i])
+    messagesHTML += service(JARDIN_ET_POTAGER.messages[i])
   }
   community.messages = messagesHTML;
   return community;
