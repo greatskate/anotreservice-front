@@ -31,7 +31,7 @@ function showPage(page) {
 					const { tagName } = child;
 					// ⬇️ It's an icon!
 					if (tagName === 'I') {
-						child.style.color = page === menuPage ? '#2196f3' : '#3f3f3f';
+						child.style.color = page === menuPage ? '#eb6555' : '#3f3f3f';
 						return true;
 					}
 					return false;

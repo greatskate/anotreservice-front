@@ -1,3 +1,12 @@
+/* eslint-disable */
+
+const Categories=[
+  "sport",
+  "maison",
+  "jardin",
+  "vie de quartier",
+  "informatique"
+]
 const SERVICE_BRICOLAGE_1= {
   url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
   profil_name:"VALERIE",
@@ -46,7 +55,7 @@ const BRICOLAGE_SMALL = {
   description:"Bonjour, ici se retrouvent tous les fans de Bricolage, conseils,services zefzefzefze zefzefzef zfefethyre",
   members:4,
   partages:0,
-  square:"Villeneuve d'ascq"
+  square:"Villeneuve d'ascq",
 }
 const JARDIN_ET_POTAGER= {
   id:1,
@@ -54,7 +63,8 @@ const JARDIN_ET_POTAGER= {
   owner_name:"Thomas",
   members:3,
   square:"Lille",
-  messages:[SERVICE_JARDIN_1]
+  messages:[SERVICE_JARDIN_1],
+  cp:5900
 }
 const BRICOLAGE= {
   id:2,
