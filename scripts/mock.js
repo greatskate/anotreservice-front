@@ -46,7 +46,7 @@ const JARDIN_ET_POTAGER_SMALL = {
   name:"Jardinage et potager",
   description:"Bonjour, ici se retrouvent tous les fans de potager et de jardinage, conseils,services zefzefzefze zefzefzef zfefethyre",
   members:3,
-  partages:0,
+  annonces:0,
   square:"Lille"
 }
 const BRICOLAGE_SMALL = {
@@ -54,7 +54,7 @@ const BRICOLAGE_SMALL = {
   name:"Bricolage",
   description:"Bonjour, ici se retrouvent tous les fans de Bricolage, conseils,services zefzefzefze zefzefzef zfefethyre",
   members:4,
-  partages:0,
+  annonces:0,
   square:"Villeneuve d'ascq",
 }
 const JARDIN_ET_POTAGER= {
