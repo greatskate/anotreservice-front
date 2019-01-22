@@ -28,14 +28,15 @@ const makeSubscription = (client, watch, relativePath) => {
 		});
 	client.on('subscription', (resp) => {
 		if (resp.subscription !== subscriptionName) return;
-
 		resp.files.forEach((file) => {
 			const { name } = file;
-			const currentTime = (new Date()).getTime();
-			if (currentTime - 500 >= lastBuild) {
-				console.log(`ℹ️  Detected change (${`${name}`.cyan}) since last build: ${'Rebuilding'.yellow}...`);
-				build();
-				lastBuild = currentTime;
+			if (!['.git/', 'build/'].some(path => name.startsWith(path))) {
+				const currentTime = (new Date()).getTime();
+				if (currentTime - 500 >= lastBuild) {
+					console.log(`ℹ️  Detected change (${`${name}`.cyan}) since last build: ${'Rebuilding'.yellow}...`);
+					build();
+					lastBuild = currentTime;
+				}
 			}
 		});
 	});
@@ -46,8 +47,10 @@ const init = () => build()
 		lastBuild = (new Date()).getTime();
 		app.use(express.static(`${__dirname}/build`));
 
-		app.listen(8000, () => {
-			console.log('App listening on port 8000.')
+		const { PORT = 8000 } = process.env;
+
+		app.listen(PORT, () => {
+			console.log(`App listening on port ${PORT}.`)
 		});
 
 		const client = new watchman.Client();

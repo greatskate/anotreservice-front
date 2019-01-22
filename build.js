@@ -1,3 +1,4 @@
+require('colors');
 const fs = require('fs');
 const { createStyle } = require('./utils/manager.js')
 const { loadObject } = require('./utils/ObjectCreator');

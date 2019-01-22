@@ -2,33 +2,54 @@
 window.addEventListener("load",initMain)
 
 function initMain(){
-  logged = false;
   loggedComponents = document.getElementsByClassName("logged");
+  logoutComponents = document.getElementsByClassName("logout_component");
   pages = document.getElementsByClassName("page");
-  login();
-  load();
-}
+  login_button.addEventListener("click",openLoginDialog);
+  login_darken_layer_dialog.addEventListener("click",closeLoginDialog);
+  login_button_container.addEventListener("click",closeLoginDialog);
 
+  load();
+  initScrollListener()
+  initNav();
+	// logout();
+  initLogin()
+  initCommunities()
+  initNav()
+	loggued = true;
+	showPage('profil');
+}
 function login(){
   for (var i= 0;i<loggedComponents.length;i++){
-    loggedComponents[i].style.display = "block";
+    loggedComponents[i].style.display = "flex";
+  }
+  for (var i= 0;i<logoutComponents.length;i++){
+    logoutComponents[i].style.display = "none";
   }
   if(!logged){
     for (var i= 0;i<pages.length;i++){
-      pages[i].style.bottom = "";
+      pages[i].style.marginBottom = "";
     }
   }
+
+  logged = true;
 }
 
 function logout(){
   for (var i= 0;i<loggedComponents.length;i++){
     loggedComponents[i].style.display = "none";
   }
-  if(!logged){
+  for (var i= 0;i<logoutComponents.length;i++){
+    logoutComponents[i].style.display = "block";
+  }
+  if(logged){
     for (var i= 0;i<pages.length;i++){
-      pages[i].style.bottom = "0px";
+      pages[i].style.marginBottom = "0px";
     }
   }
+
+  showPage("home");
+  logged = false;
 
 }
 
@@ -37,41 +58,40 @@ function load(){
   conversationsList = document.getElementById("conversationsList");
   historyList = document.getElementById("historyList");
   commentariesList = document.getElementById("commentariesList");
-  let service1 = service({
-    url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
-    profil_name:"Stephane",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    uev:150,
-    time:"1h30",
-    square:"Lille"})
-  serviceOnHome.outerHTML = service1;
-  let conversation1 = conversation({
-    url_profil_picture:"https://www.lyonmag.com/medias/images/stephane-bern45.jpg",
-    profil_name:"Stephane",
-    last_message:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    time:"1h30",
-  })
-  let commentary1 = commentary({profil_name:"Stephane",text:"Genial experience avec moi meme !"})
-  conversationsList.innerHTML =
-   conversation1 +
-   conversation1 +
-   conversation1 +
-   conversation1 +
-   conversation1
-  ;
-  historyList.innerHTML =
-  service1 +
-  service1 +
-  service1 +
-  service1 +
-  service1 +
-  service1;
+  listCommunityInProfil = document.getElementById("listCommunityInProfil");
+  listCommunityInCommunities = document.getElementById("listCommunityInCommunities");
+  let serviceLoaded = loadService();
+  let serviceHTML = service(serviceLoaded);
+  serviceOnHome.outerHTML = serviceHTML;
 
-  commentariesList.innerHTML =
-  commentary1 +
-  commentary1 +
-  commentary1 +
-  commentary1 +
-  commentary1
+  let conversationsLoaded = loadConversations();
 
+  let conversationsHTML =""
+  for (var i=0;i<conversationsLoaded.length;i++){
+    conversationsHTML += conversation(conversationsLoaded[i])
+  }
+
+  conversationsList.innerHTML = conversationsHTML;
+
+  let commentariesLoaded = loadCommentaries();
+  let commentariesHTML =""
+  for (var i=0;i<commentariesLoaded.length;i++){
+    commentariesHTML += commentary(commentariesLoaded[i])
+  }
+  commentariesList.innerHTML = commentariesHTML;
+
+
+  let communitiesLoaded = loadCommunities();
+  let communitiesHTML =""
+  for (var i=0;i<communitiesLoaded.length;i++){
+    communitiesHTML += community_small(communitiesLoaded[i])
+  }
+  listCommunityInProfil.innerHTML = communitiesHTML;
+  listCommunityInCommunities.innerHTML = communitiesHTML;
+  let servicesLoaded = loadServices();
+  let servicesHTML =""
+  for (var i=0;i<servicesLoaded.length;i++){
+    servicesHTML += service(servicesLoaded[i])
+  }
+  historyList.innerHTML = servicesHTML
 }

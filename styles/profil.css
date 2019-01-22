@@ -1,48 +1,113 @@
-.profil{
-
-  font-size: 16px;
-}
-.profil .profil_picture{
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  position: absolute;
-  top: 10px;
-  left: 5px;
-}
-.profil .main .bio{
-  position: absolute;
-  left: 170px;
-  right: 5px;
-  top: 60px;
-}
-.profil .main{
-  background-color: yellow;
-  position: relative;
-  height: 280px;
-}
-.profil .main .uev{
-  position: absolute;
-  bottom: 0px;
-  left: 105px;
+#profile_informations {
+	position: relative;
+	height: auto;
+	min-height: 200px;
+	margin-top: 40px;
+	animation: fade-in-translate 1.5s ease;
+	padding: 0px 40px 20px;
 }
 
-.profil .main .timeJoin{
-  position: absolute;
-  bottom: 0px;
-  right: 5px;
+#profile_avatar_container {
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	top: -40px;
+	left: 20px;
+	opacity: 0;
+	animation: fade-in-translate 1.5s ease 100ms;
+	animation-fill-mode: forwards;
+	padding: 0;
+	overflow: hidden;
 }
 
-.profil .main .position{
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-}
-.profil .communities{
-  background-color: orange;
+#profile_avatar_container > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
-.profil .commentaries{
-  background-color: purple;
+#profile_star_rating_wrapper {
+	height: 60px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+#profile_star_rating_container {
+	flex: 1;
+	margin-left: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#profile_star_rating_container > i {
+	opacity: 0;
+	animation: fade-in-translate-really-low 1s ease;
+	animation-fill-mode: forwards;
+}
+
+#profile_star_rating_container > span {
+	margin-left: 15px;
+	font-size: 14px;
+	font-weight: 500;
+	opacity: 0;
+	animation: fade-in 1s ease 1.3s;
+	animation-fill-mode: forwards;
+}
+
+.profile_field {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.profile_field > i {
+	margin-right: 15px;
+}
+
+#profile_name {
+	margin-top: 25px;
+	opacity: 0;
+	animation: fade-in-translate-left 750ms ease 800ms;
+	animation-fill-mode: forwards;
+}
+
+#profile_name > span {
+	font-size: 20px;
+	color: #2f2f2f;
+	font-weight: 500;
+}
+
+#profile_wallet {
+	opacity: 0;
+	animation: fade-in-translate-left 750ms ease 900ms;
+	animation-fill-mode: forwards;
+}
+
+#profile_wallet > span {
+	font-size: 16px;
+	color: #3f3f3f;
+}
+
+#profile_location {
+	opacity: 0;
+	animation: fade-in-translate-left 750ms ease 1000ms;
+	animation-fill-mode: forwards;
+}
+
+#profile_location > span {
+	font-size: 16px;
+	color: #3f3f3f;
+}
+
+#profile_joinedAt {
+	opacity: 0;
+	animation: fade-in-translate-left 750ms ease 1100ms;
+	animation-fill-mode: forwards;
+}
+
+#profile_joinedAt > span {
+	font-size: 16px;
+	color: #3f3f3f;
 }

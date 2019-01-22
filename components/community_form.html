@@ -1,10 +1,41 @@
-<form class="community">
-  <h3>Rejoindre une communautée</h3>
-  <select>
-    <option> Categories </option>
-  </select><br />
-  <input type="text" placeholder="CP"/> <input type="text" placeholder="PAYS"/> <br />
-
-  <input type="text" placeholder="🔍 MOTS CLEFS"/>
-
+<form class="community community_search_form card" id="community_form">
+	<div class="inputs_group">
+		<div class="input_container">
+			<div class="input_icon_container">
+				<i class="material-icons">send</i>
+			</div>
+			<input
+				type="text"
+				placeholder="Code postal"
+			>
+		</div>
+		<div class="input_container">
+			<div class="input_icon_container">
+				<i class="material-icons">location_on</i>
+			</div>
+			<input
+				type="text"
+				placeholder="Ville"
+			>
+		</div>
+		<div class="input_container">
+			<div class="input_icon_container">
+				<i class="material-icons">vpn_key</i>
+			</div>
+			<input
+				type="text"
+				placeholder="Mots clés"
+			>
+		</div>
+	</div>
+  <select id="community_select">
+    <option>Categories</option>
+  </select>
+  <button
+		role="button"
+		class="button_container button_container_raised"
+		id="community_button"
+	>
+  	Rechercher
+  </button>
 </form>
