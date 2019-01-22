@@ -1,7 +1,12 @@
 /* eslint-disable */
 communitiesSmallToLoad = [JARDIN_ET_POTAGER_SMALL,BRICOLAGE_SMALL]
+communitiesAdminSmallToLoad = [BRICOLAGE_SMALL]
 function loadCommunities(){
   let communities = communitiesSmallToLoad;
+  return communities;
+}
+function loadCommunitiesAdmin(){
+  let communities = communitiesAdminSmallToLoad;
   return communities;
 }
 

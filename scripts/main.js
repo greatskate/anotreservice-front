@@ -12,6 +12,7 @@ function initMain(){
   load();
   initScrollListener()
   initNav();
+  initProfil();
 	// logout();
   initLogin()
   initCommunities()
