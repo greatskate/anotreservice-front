@@ -11,11 +11,12 @@ async function getFilesDirectoryRecursive(path, files) {
 
 	let newFiles = [];
 	for (let i = 0; i < dirs.length; i += 1) {
-		const directory = typeof (dirs[i]) === 'string'
+		const directoryName = typeof (dirs[i]) === 'string'
 			? dirs[i]
 			: dirs[i].name;
-		const newPath = `${path}/${directory}`;
-		if (dirs[i].isDirectory()) {
+		const newPath = `${path}/${directoryName}`;
+		const isDirectory = fs.lstatSync(newPath).isDirectory()
+		if (isDirectory) {
 			newFiles = newFiles.concat(await getFilesDirectoryRecursive(newPath, newFiles));
 		} else {
 			const text = fs.readFileSync(newPath, 'utf8');
