@@ -6,11 +6,11 @@ function getParams(text) {
 		let result = `${text.substring(0, text.indexOf('[@'))}`;
 		const param = text.substring(text.indexOf('[@') + 2, text.indexOf(']'));
 		const endResult = text.substring(text.indexOf(']') + 1, text.length);
-		result += `'+ object.${param}+'${endResult}`;
+		result += `$\{`+ `object.${param}`+`}`+`${endResult}`;
 		return getParams(result);
 	}
 
-	return `'${text}'`;
+	return `${text}`;
 }
 
 
@@ -27,10 +27,10 @@ function create(object) {
 	const text = fs.readFileSync(`./components/objects/${object}.html`, 'utf8');
 	let result = '';
 	result += `function ${object}(object){ \n  return `
-	let returnValue = getParams(text);
-	returnValue = replaceAll(returnValue, '\n', '\'+ \n\'');
-	result += returnValue.substring(0, returnValue.length - 5);
-	result += '}\n';
+	const returnValue = getParams(text);
+	// returnValue = replaceAll(returnValue, '\n', '\'+ \n\'');
+	result += '`'+returnValue;
+	result += '}`\n';
 	fs.appendFile('./build/scripts/creator.js', result, (err) => {
 		if (err) throw err;
 	});
