@@ -1,35 +1,106 @@
-{% "community_form.html" %}
 
-<div id="community_home_finder">
+<main>
+
+<form id="nous-rejoindre">
+<h2 class="join-us">Rejoindre une communeauté</h2>
+
+<select class="categories" name="categories" size="1">
+<option selected="Catégories">Catégories</option>
+<option>Jardinage</option>
+<option>Bricolage</option>
+<option>Aide à Domicile</option>
+</select>
+
+<div id="cp-keywords">
+<input class="cp"type="text" name="cp" placeholder="code postal">
+<input class="keywords"type="text" name="cp" placeholder="Mots Clefs">
+<input class="valider" type="submit" name="search">
 
 </div>
-<div id="serviceOnHome">
+
+
+<h2 class="creer" style="margin-top: 30px;">Créer une communeauté</h2>
+
+<select class="categories" name="categories" size="1">
+<option selected="Catégories">Catégories</option>
+<option>Jardinage</option>
+<option>Bricolage</option>
+<option>Aide à Domicile</option>
+</select>
+
+<input class="nom" type="text" name="nom" placeholder="Nom de la communeauté">
+
+
+<div id="cp-keywords">
+<input class="cp"type="text" name="cp" placeholder="code postal">
+<input class="keywords"type="text" name="cp" placeholder="Mots Clefs">
+<textarea id="story" name="story"
+          rows="5" cols="60">
+Descriptif de la communeauté
+</textarea>
+<input class="valider" type="submit" name="create" placeholder="Créer">
 
 </div>
+</form>
 
-<h3>Comment ça Marche ?</h3>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<h3>Derniers services proposés : </h3>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<div id="last-services">
+
+
+<div class="identite">
+
+ <img src="photo.jpeg">
+ <p>Aurélie <i class="material-icons" style="color: black;">
+star
+  </i><span>4.5/5</span></p>
+
+ <p>Bonjour je propose mes services d'aide au devoirs la semaine ...</p>
+</div>
+
+ <div class="elements">
+
+ <p>25 UEV</p>
+ <p><i style="color:black;" class="material-icons">
+hourglass_full
+</i>1 heure</p>
+ <p><i style="color:black;" class="material-icons">
+location_on
+  </i>Lille</p>
+</div>
+<h3>Comment ça marche ? </h3>
+<h3>Pourquoi choisir A notre service ? </h3>
+
+<div id="stats">
+<div><p>3 980 de membres</p></div>
+<div><p>38 909 communeautés</p></div>
+<div><p>7658€ économisés</p></div>
+</div>
+
+<h3>Ils témoignent : </h3>
+<div id="last-services">
+
+
+<div class="identite">
+
+ <img src="man.jpeg">
+ <p>Michel <i class="material-icons" style="color: black;">
+star
+</i><span>4.5/5</span></p>
+
+ <p>Bonjour je propose mes services d'aide au devoirs la semaine ...</p>
+</div>
+
+</div>
+</div>
+
+<h3>Retrouvez nous sur :</h3>
+
+<div id="rs">
+	<img src="facebook.svg" alt="Social Media facebook">
+	<img src="twitter.svg" alt="Social Media twitter">
+	<img src="instagram.svg" alt="Social Media instagram">
+</div>
+</div>
+
+</main>

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node -e \"require('./build').build()\"",
     "dev": "node dev",
-		"start": "npm run build && node serve_prod"
+    "start": "npm run build && node serve_prod"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -18,7 +18,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "express": "^4.16.4",
-    "fb-watchman": "^2.0.0"
+    "fb-watchman": "^2.0.0",
+    "socket.io-client": "^2.2.0"
   },
   "author": "",
   "license": "ISC"
