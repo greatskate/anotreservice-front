@@ -30,7 +30,7 @@ function create(object) {
 	const returnValue = getParams(text);
 	// returnValue = replaceAll(returnValue, '\n', '\'+ \n\'');
 	result += '`'+returnValue;
-	result += '}`\n';
+	result += '`}\n';
 	fs.appendFile('./build/scripts/creator.js', result, (err) => {
 		if (err) throw err;
 	});
