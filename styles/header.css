@@ -12,7 +12,7 @@ header {
   padding: 10px 25px;
   background-color: #eb6252;
   z-index: 1;
-  height: 50px;
+  height: 75px;
 }
 
 header > #logo {
@@ -25,6 +25,15 @@ header > #logo {
   top: 10px;
 }
 
-header i {
-	color: white;
+header .material-icons {
+	color: #fff;
+}
+
+header .button_container {
+	color: #fff;
+}
+
+header .button_container_raised {
+	color: #3f3f3f;
+	background-color: #fff;
 }
