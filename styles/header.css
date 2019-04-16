@@ -24,3 +24,7 @@ header > #logo {
   position: relative;
   top: 10px;
 }
+
+header i {
+	color: white;
+}
