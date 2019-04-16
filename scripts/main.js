@@ -9,13 +9,13 @@ function initMain(){
   login_darken_layer_dialog.addEventListener("click",closeLoginDialog);
   login_button_container.addEventListener("click",closeLoginDialog);
   socket = io('http://localhost:8080');
-  load();
+  //load();
   initScrollListener()
   initNav();
 	logout();
-  initLogin()
-  initCommunities()
-  initNav()
+  //initLogin()
+  //initCommunities()
+  //initNav()
 	loggued = false;
 	showPage('home');
 }
@@ -60,8 +60,8 @@ function load(){
   commentariesList = document.getElementById("commentariesList");
   listCommunityInProfil = document.getElementById("listCommunityInProfil");
   listCommunityInCommunities = document.getElementById("listCommunityInCommunities");
-  let serviceLoaded = loadService();
-  let serviceHTML = service(serviceLoaded);
+  //let serviceLoaded = loadService();
+  //let serviceHTML = service(serviceLoaded);
   //serviceOnHome.outerHTML = serviceHTML;
 
   let conversationsLoaded = loadConversations();
