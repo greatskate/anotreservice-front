@@ -17,11 +17,13 @@ header {
 }
 
 header > #logo {
-	background-image: url("logo.svg");
 	width: 75px;
 	height:75px;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	position: relative;
 	top: 10px;
+}
+header i {
+	color: white;
 }
