@@ -1,29 +1,30 @@
 header {
-  	position: fixed;
-  	top: 0px;
-  	left:0px;
-  	right:0px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  	height: 75px;
-	box-shadow: 0 5px 17px 0 rgba(0,0,0,.10);
-	transition: height 150ms ease;
-	will-change: height;
-	padding: 10px 25px;
-	background-color: #EB6252;
-	z-index: 1;
-	height: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px 45px rgba(29,29,31,0.2);
+  transition: height 150ms ease;
+  will-change: height;
+  padding: 10px 25px;
+  background-color: #eb6252;
+  z-index: 1;
+  height: 50px;
 }
 
 header > #logo {
-	width: 75px;
-	height:75px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	position: relative;
-	top: 10px;
+  background-image: url("logo.svg");
+  width: 75px;
+  height: 75px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 10px;
 }
+
 header i {
 	color: white;
 }
