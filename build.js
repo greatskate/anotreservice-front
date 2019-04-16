@@ -76,6 +76,8 @@ function importStyleScript() {
 		);
 	}
 	generatedImport += importScript('creator.js');
+	const images = fs.readdirSync('./images', { withFileTypes: true });
+	createHierarchy('images', images);
 	return generatedImport;
 }
 
