@@ -12,7 +12,7 @@ header {
   padding: 10px 25px;
   background-color: #eb6252;
   z-index: 1;
-  height: 50px;
+  height: 80px;
 }
 
 header > #logo {

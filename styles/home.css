@@ -1,0 +1,173 @@
+#nous-rejoindre{
+	width: 500px;
+	height: 100%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.join-us, .creer{
+	text-align: center;
+	width: 400px;
+	height: 40px;
+	margin: auto;
+	padding-top:5px;
+	border-radius: 7px;
+	background-color: #256273;
+	color: white;
+}
+
+.categories{
+	width: 400px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: white;
+	color: #4A4745;
+	border-radius: 4px;
+	padding-left: 5px;
+	border: 1px solid darkgrey;
+}
+
+.cp, .keywords{
+
+	width: 198px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: white;
+	color: #4A4745;
+	padding-left: 5px;
+
+
+}
+
+.valider{
+
+	width: 200px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: #EB6252;
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 1px solid #EB6252;
+	text-align: center;
+}
+
+.nom{
+
+	width: 400px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: white;
+	color: #4A4745;
+	padding-left: 5px;
+	border: 1px solid darkgrey;
+	border-radius: 4px;
+}
+
+#story{
+	border-radius: 4px;
+	border: 1px solid darkgrey;
+	margin-top: 10px;
+	color: grey;
+	padding-left: 5px;
+}
+
+
+i{
+	color: white;
+	line-height: inherit;
+}
+
+main{
+
+	margin:auto;
+	text-align: center;
+}
+
+#last-services{
+	width: 400px;
+	margin: 20px auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-color: white;
+
+}
+
+#last-services img{
+	border-radius: 50%;
+	width: 20%;
+
+
+}
+
+.elements{
+	display: flex;
+	justify-content: center;
+
+}
+
+.identite{
+	display: inline;
+	background-color: white;
+}
+
+.identite img{
+	margin-top: 20px;
+}
+
+@font-face {
+ 	font-family: "Din Alternate Bold";
+	src: url("din.otf") format("otf");
+	}
+
+ h3{
+	text-align: center;
+	
+}
+
+
+}
+
+#stats div{
+	width: 120px;
+	height: 120px;
+	background-color: #EB6252;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0px 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#stats{
+	display: flex;
+	color: white;
+	margin:auto;
+	justify-content: center;
+
+	
+}
+
+#stats p{
+	vertical-align: middle;
+	margin-top: 35px;
+}
+
+#rs{
+	display: flex;
+	justify-content: center;
+}
+
+#rs img{
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	color: #256273;
+}
+
+p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
