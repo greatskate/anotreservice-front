@@ -72,7 +72,6 @@ location_on
  </div>
 
 </div>
-</div>
 
 <h3>Comment ça marche ? </h3>
 <h3>Pourquoi choisir A notre service ? </h3>
@@ -98,15 +97,23 @@ star
 </div>
 
 </div>
-</div>
 
 </main>
 
-<div>
-  <div id="login_dialog" class="dialog_container" style="opacity: 0; pointer-events: none;">
-    <div id="login_darken_layer_dialog" class="dialog_darken_layer"></div>
-    {% "login_dialog.html" %}
-    {% "register_dialog.html" %}
+<div id="black_screen">
+</div>
+<div id="login_dialog" class="dialog_container">
+  <div id="login_darken_layer_dialog" class="dialog_darken_layer"></div>
+    <div id="login_page">
+      {% "dialogs/login_dialog.html" %}
+    </div>
+    <div id="register_page" style="display:none">
+      {% "dialogs/register_dialog.html" %}
+    </div>
+    <!-- BUTTON ICI POUR SWITCH LOGIN TO REGISTER -->
+    <div id="buttons_switch">
+      <div id="button_switch_login">Go to Login</div>
+      <div id="button_switch_register">Go to Register</div>
     </div>
   </div>
 </div>

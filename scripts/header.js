@@ -1,6 +1,6 @@
 /*
 This script handle all the logic begind the Header (See components/header.html).
-*/
+
 class Header {
 	constructor() {
 		console.log('[Header] Initializing script...');
@@ -57,3 +57,4 @@ class Header {
 }
 
 const header = new Header();
+*/
