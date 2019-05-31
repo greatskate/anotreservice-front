@@ -51,7 +51,8 @@
 
 
 .login-form, .register-form {
-  margin: auto 20px;
+  margin: auto;
+  padding: auto;
   width:450px;
   height:650px;
   text-align:center;
