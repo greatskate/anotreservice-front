@@ -131,7 +131,7 @@ a, a:visited {
   height: 40px;
   padding: 0 14px;
   overflow: hidden;
-  background: #474E51;
+  background: #EB6252;
   position: relative;
   line-height: 40px;
   color: #fff;
@@ -169,18 +169,18 @@ a, a:visited {
   margin: 5px auto;
   padding: 10px 8px 10px 8px;
   border-radius: 5px;
-  border: 1px solid #666;
+  border: 1px solid #256273;
 }
 
 .inputStyle:hover,
 .inputStyle:focus {
   color: white;
-  border: 1px solid #08c;
+  border: 1px solid ##EB6252;
 }
 
 .inputStyle[type="text"]:focus,
 .inputStyle[type="password"]:focus {
-  border: 1px solid #08c;
+  border: 1px solid #256273;
   outline: none;
 }
 
@@ -190,7 +190,7 @@ a, a:visited {
   width:120px;
   background: #08c;
   box-shadow: inset 0 1px 2px rgba(255,255,255, .35), 0px 1px 6px rgba(0,246,255,.5);
-  border: 1px solid #0a5378;
+  border: 1px solid #256273;
   border-radius: 4px;
   color: #eee;
   cursor: pointer;
@@ -200,7 +200,7 @@ a, a:visited {
 .inputStyle[type="submit"]:hover {
   background: #08c;
   width:120px;
-  border: 1px solid #0a5378;
+  border: 1px solid #256273;
   border-radius: 3px;
   box-shadow: inset 0px 3px 16px rgba(0,0,0,.25),0px 1px 10px rgba(255,255,255,.5),inset 0px -1px 2px rgba(255,255,255,.35);
   text-shadow:0px 1px 1px rgba(0,0,0,.65);
