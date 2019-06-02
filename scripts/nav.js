@@ -50,3 +50,8 @@ function showPage(page) {
 	}
 	return returnPage
 }
+function restorePages() {
+	for (let i = 0; i < pages.length; i += 1) {
+		pages[i].scrollTop = 0;
+	}
+}
