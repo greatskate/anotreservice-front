@@ -6,8 +6,12 @@ function initEvent(){
 
   buttonSwitchLogin = document.getElementById("button_switch_login")
   buttonSwitchRegister = document.getElementById("button_switch_register")
-  buttonSwitchLogin.addEventListener("click",switchLogin)
+  if (buttonSwitchLogin!==undefined){
+    buttonSwitchLogin.addEventListener("click",switchLogin)
+  }
   buttonSwitchRegister.addEventListener("click",switchRegister)
+  formRegister = document.getElementById("form_register");
+  formRegister.addEventListener("submit",onSubmitRegister)
 }
 
 function printLoginDialog(){
@@ -38,4 +42,9 @@ function switchRegister(){
   blackScreen.style.display= "none";
   let registerPage = document.getElementById("register_page");
   registerPage.style.display= "block";
+}
+
+function onSubmitRegister(ev){
+  ev.preventDefault();
+  console.log(ev);
 }
