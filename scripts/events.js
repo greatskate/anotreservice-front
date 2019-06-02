@@ -12,6 +12,9 @@ function initEvent(){
   buttonSwitchRegister.addEventListener("click",switchRegister)
   formRegister = document.getElementById("form_register");
   formRegister.addEventListener("submit",onSubmitRegister)
+
+  loginButton = document.getElementById("login_action_button");
+  loginButton.addEventListener("click",onClickLogin);
 }
 
 function printLoginDialog(){
@@ -47,4 +50,8 @@ function switchRegister(){
 function onSubmitRegister(ev){
   ev.preventDefault();
   console.log(ev);
+}
+function onClickLogin(){
+  removeLoginDialog();
+  login();
 }
