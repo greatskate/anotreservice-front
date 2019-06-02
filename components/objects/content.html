@@ -20,14 +20,18 @@
 </div>
 
 
-<h2 class="creer" style="margin-top: 30px;">Créer une communeauté</h2>
+<h2>Créer une communeauté</h2>
 
-<select class="inputStyle" name="categories" size="1">
-<option selected="Catégories">Catégories</option>
-<option>Jardinage</option>
-<option>Bricolage</option>
-<option>Aide à Domicile</option>
+<label for="categories">Séléctionner une catégorie : </label>
+
+<select id="categories">
+    <option value="">--Choisir une catégorie--</option>
+    <option value="bricolage">Bricolage</option>
+    <option value="jardin">Jardin</option>
+	<option value="enfants">Garde d'enfants</option>
+	<option value="menage">Ménage</option>
 </select>
+
 
 <input class="nom" type="text" name="nom" placeholder="Nom de la communeauté">
 
