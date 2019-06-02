@@ -1,0 +1,33 @@
+#members{
+
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}	
+
+.member{
+	display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.member img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.member-infos{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+}
+
+.member-infos i{
+    width: 40px;
+}
