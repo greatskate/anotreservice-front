@@ -1,118 +1,17 @@
 
+<div class="page" data-page="home">
 {% "home.html"%}
+</div>
 
-<main>
-
-<form id="nous-rejoindre">
-<h2 class="join-us">Rejoindre une communeauté</h2>
-
-<select class="categories" name="categories" size="1">
-<option selected="Catégories">Catégories</option>
-<option>Jardinage</option>
-<option>Bricolage</option>
-<option>Aide à Domicile</option>
-</select>
-
-<div id="cp-keywords">
-<input class="cp"type="text" name="cp" placeholder="code postal">
-<input class="keywords"type="text" name="cp" placeholder="Mots Clefs">
-<input class="valider" type="submit" name="search">
-
+<div class="page" data-page="communities">
+{% "communities.html"%}
 </div>
 
 
-<h2 class="creer" style="margin-top: 30px;">Créer une communeauté</h2>
-
-<select class="categories" name="categories" size="1">
-<option selected="Catégories">Catégories</option>
-<option>Jardinage</option>
-<option>Bricolage</option>
-<option>Aide à Domicile</option>
-</select>
-
-<input class="nom" type="text" name="nom" placeholder="Nom de la communeauté">
-
-
-<div id="cp-keywords">
-<input class="cp"type="text" name="cp" placeholder="code postal">
-<input class="keywords"type="text" name="cp" placeholder="Mots Clefs">
-<textarea id="story" name="story"
-          rows="5" cols="53">
-Descriptif de la communeauté
-</textarea>
-<input class="valider" type="submit" name="create" placeholder="Créer">
-
-</div>
-</form>
-
-<h3>Derniers services proposés : </h3>
-
-<div id="last-services">
-
-
-<div class="identite">
-
- <img src="./images/avatar-un.png">
- <p>Aurélie <i class="material-icons" style="color: black;">
-star
-</i><span>4.5/5</span></p>
-
- <p>Bonjour je propose mes services d'aide au devoirs la semaine ...</p>
+<div class="page" data-page="profil">
+{% "profil.html"%}
 </div>
 
- <div class="elements">
-
- <p>25 UEV</p>
- <p><i style="color:black;" class="material-icons">
-hourglass_full
-</i>1 heure</p>
- <p><i style="color:black;" class="material-icons">
-location_on
-</i>Lille</p>
- </div>
-
-</div>
-
-<h3>Comment ça marche ? </h3>
-<h3>Pourquoi choisir A notre service ? </h3>
-
-<div id="stats">
-<div><p>3 980 de membres</p></div>
-<div><p>38 909 communeautés</p></div>
-<div><p>7658€ économisés</p></div>
-</div>
-
-<h3>Ils témoignent : </h3>
-<div id="last-services">
-
-
-<div class="identite">
-
- <img src="avatar-homme.png">
- <p>Michel <i class="material-icons" style="color: black;">
-star
-</i><span>4.5/5</span></p>
-
- <p>Bonjour je propose mes services d'aide au devoirs la semaine ...</p>
-</div>
-
-</div>
-
-</main>
-
-<div id="black_screen">
-</div>
-<div id="login_dialog" class="dialog_container">
-  <div id="login_darken_layer_dialog" class="dialog_darken_layer"></div>
-    <div id="login_page">
-      {% "dialogs/login_dialog.html" %}
-    </div>
-    <div id="register_page" style="display:none">
-      {% "dialogs/register_dialog.html" %}
-    </div>
-    <!-- BUTTON ICI POUR SWITCH LOGIN TO REGISTER -->
-    <div id="buttons_switch">
-      <div id="button_switch_login">Go to Login</div>
-    </div>
-  </div>
+<div class="page" data-page="community">
+{% "community.html"%}
 </div>
