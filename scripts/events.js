@@ -15,6 +15,8 @@ function initEvent(){
 
   loginButton = document.getElementById("login_action_button");
   loginButton.addEventListener("click",onClickLogin);
+  logoutButton = document.getElementById("logout_action_button");
+  logoutButton.addEventListener("click",onClickLogout);
 }
 
 function printLoginDialog(){
@@ -54,4 +56,8 @@ function onSubmitRegister(ev){
 function onClickLogin(){
   removeLoginDialog();
   login();
+}
+function onClickLogout(){
+  logout();
+  showPage('home')
 }
