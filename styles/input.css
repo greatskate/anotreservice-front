@@ -54,7 +54,7 @@
   margin: auto;
   padding: auto;
   width:450px;
-  height:650px;
+  height:600px;
   text-align:center;
   background:#256273;
   -webkit-border-radius:4px;
@@ -156,7 +156,7 @@ a, a:visited {
 
 .buttonLeft span {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 
@@ -175,7 +175,7 @@ a, a:visited {
 
 .inputStyle:hover,
 .inputStyle:focus {
-  color: white;
+ 
   border: 1px solid ##EB6252;
 }
 
@@ -212,4 +212,8 @@ a, a:visited {
 
 .register{
   margin-top: 20px;
+}
+
+.date{
+  color: grey;
 }

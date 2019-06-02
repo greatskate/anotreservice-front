@@ -1,0 +1,59 @@
+<style>
+
+#form-service{
+
+	width: 500px;
+}	
+
+</style>
+
+
+<form method="" action="" id="form-service">
+<i class="material-icons">arrow_back</i><h2>Jardin et Potager</h2>
+<p>Publier une annonce sur "Jardin et Potager"</p>
+
+<select id="categ">
+    <option value="">--Choisir une catégorie--</option>
+    <option value="sport">Sport</option>
+    <option value="maison">Maison</option>
+    <option value="jardin">Jardin</option>
+    <option value="vie">Vie de quartier</option>
+    <option value="informatique">Informatique</option>
+</select>
+
+<br><br>
+
+<input type="text" name="texte" value="titre de l'annonce">
+<br> <br>
+
+<textarea rows="10" cols="40" name="comment" form="form-service">
+Descriptif de l'annonce</textarea>
+<br>
+<input type="text" name="localisation" value="localisation">
+<input type="text" name="uev" value="uev">
+<br>
+<br>
+
+<div>
+ <label>Temps nécéssaire</label>
+<input class="end" type="number" name="uev" value="25">
+ <br> <br>
+  <input type="radio" id="heures" name="heures">
+  <label for="heures">Heures</label>
+</div>
+
+<div>
+  <input type="radio" id="jours" name="jours">
+  <label for="jours">Jours</label>
+</div>
+
+<div>
+  <input type="radio" id="semaines" name="semaines">
+  <label for="jours">Semaines</label>
+</div>
+<button type="button">Publier une photo</button>
+<br>
+<button class="buttonLeft">Publier mon annonce dans la communeauté</button>
+
+
+</form>
