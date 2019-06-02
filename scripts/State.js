@@ -1,7 +1,8 @@
 window.addEventListener("load",init);
 
 function init(){
-  initNav()
+  initNav();
+  initCommunities();
   socket = io('http://localhost:8080');
   logged = false;
   loggedsElement = document.getElementsByClassName("logged");
