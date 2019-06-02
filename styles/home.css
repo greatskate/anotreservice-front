@@ -19,7 +19,7 @@
 
 .categories{
 	width: 400px;
-	height: 30px;
+	height: 46px;
 	margin-top: 10px;
 	background-color: white;
 	color: #4A4745;
@@ -175,6 +175,9 @@ p{
 
 body{
 	background-image: url('../images/background.jpg');
-	background-size: cover%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
+
+
