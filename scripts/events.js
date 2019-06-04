@@ -6,7 +6,7 @@ function initEvent(){
 
   buttonSwitchLogin = document.getElementById("button_switch_login")
   buttonSwitchRegister = document.getElementById("button_switch_register")
-  if (buttonSwitchLogin!==undefined){
+  if (buttonSwitchLogin!==null){
     buttonSwitchLogin.addEventListener("click",switchLogin)
   }
   buttonSwitchRegister.addEventListener("click",switchRegister)
