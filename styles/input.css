@@ -147,6 +147,16 @@
    color:rgba(24,149,215,1);
 }
 
+textarea{
+  height:120px;
+  width:80%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:8px;
+  margin-top: 8px;
+}
 
 
 .button-home{

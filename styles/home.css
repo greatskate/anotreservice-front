@@ -46,13 +46,6 @@
 	border-radius: 4px;
 }
 
-#story{
-	border-radius: 4px;
-	border: 1px solid darkgrey;
-	margin-top: 10px;
-	color: grey;
-	padding-left: 5px;
-}
 
 
 i{
@@ -160,3 +153,51 @@ body{
 }
 
 
+.container-user {
+	margin: 15px 0; 
+ }
+ .card {
+   font-size: 15px;
+   line-height: 1.26;
+   width: 400px;
+   height: 450px;
+   margin: 0 auto;
+   box-shadow: 0px 1px 6px 1px #ccc;             
+   color: #666;
+   border-radius: 10px;
+   
+ }
+
+
+   .card-header {
+	 padding: 30px 0 10px;
+	 background-color: #eb6252;
+	 border-radius: 10px 10px 0 0;
+	 color: #fff;
+	 position: relative;
+	 text-align: center;
+
+	 .card-title {
+		font-size: 35px;
+	  }
+}
+
+.card-body {
+	height: calc(100% - 190px);
+	padding: 35px 20px 10px;
+  }
+
+  .card-footer {
+	padding: 10px 20px 10px;
+	border-top: 1px solid #ccc;
+	font-size: 18px;
+}
+
+#img-user {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+  }
