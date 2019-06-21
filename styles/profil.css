@@ -16,8 +16,7 @@ main{
 }
 
 #last-services{
-  width: 500px;
-  margin: 10px auto;
+  margin: 10px;
   
 
 }
@@ -113,7 +112,7 @@ button{
   justify-content: center;
   margin-top: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
+  background-color: #fff;
 }
 
 .jardins-et-potager h2{

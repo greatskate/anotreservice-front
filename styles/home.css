@@ -1,6 +1,7 @@
 #nous-rejoindre{
-	width: 500px;
 	height: 100%;
+	width: 100%;
+	max-width: 500px;
 	margin: auto;
 	margin-top: 50px;
 	padding-top: 20px;
@@ -8,13 +9,17 @@
 
 .join-us, .creer{
 	text-align: center;
-	width: 400px;
-	height: 40px;
+	width: 95%;
+	max-width: 480px;
 	margin: auto;
-	padding-top:5px;
 	border-radius: 4px;
 	background-color: #256273;
 	color: white;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
 }
 
 
@@ -60,9 +65,6 @@ main{
 }
 
 #last-services{
-	width: 400px;
-	margin: 20px auto;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	background-color: white;
 
 }
@@ -154,13 +156,17 @@ body{
 
 
 .container-user {
-	margin: 15px 0; 
+	margin: 40px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
  }
  .card {
    font-size: 15px;
    line-height: 1.26;
-   width: 400px;
-   height: 450px;
+   width: 95%;
+   max-width: 400px;
+
    margin: 0 auto;
    box-shadow: 0px 1px 6px 1px #ccc;             
    color: #666;
@@ -170,7 +176,7 @@ body{
 
 
    .card-header {
-	 padding: 30px 0 10px;
+	 padding: 10px 0 10px;
 	 background-color: #eb6252;
 	 border-radius: 10px 10px 0 0;
 	 color: #fff;
@@ -198,6 +204,20 @@ body{
 	height: 100px;
 	border-radius: 50%;
 	position: absolute;
-	top: 30px;
+	top: calc(88% - 100px / 2);
 	left: 20px;
+  }
+
+  #service-description{
+	  font-size: 16px;
+	  text-align: justify;
+	  line-height: 22px;
+	  overflow: hidden;
+	  max-height: calc(22px * 8 );
+	  width: 100%;
+	  text-overflow: ellipsis;
+	  -webkit-line-clamp: 8;
+	  display: -webkit-box;
+	  -webkit-box-orient: vertical;
+	  color: #3f3f3f
   }
