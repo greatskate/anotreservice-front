@@ -3,7 +3,7 @@ window.addEventListener("load",init);
 function init(){
   initNav();
   initCommunities();
-  socket = io('http://localhost:8080');
+  socket = io('http://192.168.43.97:8080');
   logged = false;
   loggedsElement = document.getElementsByClassName("logged");
   unloggedsElement = document.getElementsByClassName("unlogged");
@@ -13,6 +13,10 @@ function init(){
   for (var i=0;i<unloggedsElement.length;i++){
     unloggedsElement[0].style.display="";
   }
+  socket.on('connected', () => {
+    console.log('Received connection callback.');
+    onClickLogin();
+  });
 }
 
 function login(){

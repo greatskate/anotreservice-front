@@ -1,5 +1,6 @@
 const UserController ={
   register:(user)=>{
+    console.log({ user });
     socket.emit("user_create",user);
   },
   login:(user)=>{

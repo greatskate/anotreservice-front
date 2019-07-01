@@ -4,17 +4,12 @@ function initEvent(){
   buttonLogin = document.getElementById("login_button");
   buttonLogin.addEventListener("click",printLoginDialog);
 
-  buttonSwitchLogin = document.getElementById("button_switch_login")
   buttonSwitchRegister = document.getElementById("button_switch_register")
-  if (buttonSwitchLogin!==null){
-    buttonSwitchLogin.addEventListener("click",switchLogin)
-  }
+
   buttonSwitchRegister.addEventListener("click",switchRegister)
   formRegister = document.getElementById("form_register");
   formRegister.addEventListener("submit",onSubmitRegister)
 
-  loginButton = document.getElementById("login_action_button");
-  loginButton.addEventListener("click",onClickLogin);
   logoutButton = document.getElementById("logout_action_button");
   logoutButton.addEventListener("click",onClickLogout);
 }
