@@ -3,7 +3,7 @@ window.addEventListener("load",init);
 function init(){
   initNav();
   initCommunities();
-  socket = io('cotien-server.herokuapp.com');
+  socket = io('https://cotien-server.herokuapp.com');
   logged = false;
   loggedsElement = document.getElementsByClassName("logged");
   unloggedsElement = document.getElementsByClassName("unlogged");
