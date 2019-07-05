@@ -38,6 +38,29 @@ Ce sont de simples fichiers HTML
 *Integration*
 
 Pour intégrer un composant utilisé **{% "\<nom du fichier composant>" %}**
+
+Exemple:
+content.html
+```
+
+<div class="page" data-page="home">
+{% "home.html"%}
+</div>
+
+<div class="page" data-page="communities">
+{% "communities.html"%}
+</div>
+
+
+<div class="page" data-page="profil">
+{% "profil.html"%}
+</div>
+
+<div class="page" data-page="community">
+{% "community.html"%}
+</div>
+
+```
   
  **__Objects:__**
  _________
