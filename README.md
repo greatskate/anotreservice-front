@@ -41,7 +41,7 @@ Pour intégrer un composant utilisé **{% "\<nom du fichier composant>" %}**
 
 Exemple:
 content.html
-```
+```html
 
 <div class="page" data-page="home">
 {% "home.html"%}
