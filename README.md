@@ -11,6 +11,10 @@ Il suffira de vous creez un compte et je vous donnerai les permissions
 
 pour le coté serveur -> https://github.com/greatskate/anoterservice-back
 
+Fonctionalitées:
+
+
+
 Points Techniques:
 **Technologie utilisée: Anio**
 
