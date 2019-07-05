@@ -5,12 +5,8 @@ function initMain(){
   loggedComponents = document.getElementsByClassName("logged");
   logoutComponents = document.getElementsByClassName("logout_component");
   pages = document.getElementsByClassName("page");
-  login_button.addEventListener("click",openLoginDialog);
-  login_darken_layer_dialog.addEventListener("click",closeLoginDialog);
-  login_button_container.addEventListener("click",closeLoginDialog);
   socket = io('http://localhost:8080');
   //load();
-  initScrollListener()
   initNav();
 	logout();
   //initLogin()
