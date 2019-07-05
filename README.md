@@ -44,14 +44,14 @@ Vous pouvez créez votre object en intégrant la fonction **\<nom du fichier>(ob
 
 composants/objects/utilisateur.html
 
-```
+```html
 <div>
   <span>[@name]</span>
 </div>
 ```
 
 index.js
-```
+```js
 utilisateur({name:"Chris"});
 ```
 
