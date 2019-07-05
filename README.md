@@ -10,9 +10,9 @@ L'hebergement se fait sur Heroku -> https://heroku.com
 Il suffira de vous creez un compte et je vous donnerai les permissions
 
 Points Techniques:
-**Technologie utilisé: Anio**
+**Technologie utilisée: Anio**
 
-Composants
+**__Composants__**
 _________
 
 *Creation:*
@@ -24,7 +24,7 @@ Ce sont de simples fichiers HTML
 
 Pour integrer un composant utilisé **{% "\<nom du fichier composant>" %}**
   
- Objects:
+ **__Objects:__**
  _________
  
  *Creation:*
@@ -52,3 +52,15 @@ index.js
 ```
 utilisateur({name:"Chris"});
 ```
+
+**__Scripts:__**
+_________________
+
+Vous pouvez intégrer des scripts natifs JS dans le dossier **scripts** 
+Ils seront intégrés automatiquement
+
+**__CSS:__**
+_____________
+
+Vous pouvez intégrer vos feuilles de style CSS dans le dossier **styles** 
+Ils seront intégrés automatiquement
