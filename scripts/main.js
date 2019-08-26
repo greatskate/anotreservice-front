@@ -1,18 +1,22 @@
 /* eslint-disable */
-window.addEventListener("load",initMain)
-
+window.addEventListener('load', initMain);
 function initMain(){
   loggedComponents = document.getElementsByClassName("logged");
   logoutComponents = document.getElementsByClassName("logout_component");
   pages = document.getElementsByClassName("page");
   socket = io('http://localhost:8080');
+
+	socket.on('connected', (user) => {
+		console.log('Received connection callback.');
+		onClickLogin();
+    State.user = user
+	});
   //load();
-  initNav();
 	logout();
   //initLogin()
   //initCommunities()
   //initNav()
-	loggued = false;
+	logged = false;
 	showPage('home');
 }
 function login(){

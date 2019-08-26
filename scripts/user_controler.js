@@ -1,3 +1,4 @@
+/* eslint-disable */
 const UserController = {
 	register: (user) => {
 		console.log({ user });
