@@ -11,6 +11,11 @@ function initMain(){
 		onClickLogin();
     State.user = user
 	});
+  socket.on("communities_load",(communities)=>{
+    console.log(communities)
+    initCommunities(communities)
+  })
+  socket.emit("communities_load")
   //load();
 	logout();
   //initLogin()

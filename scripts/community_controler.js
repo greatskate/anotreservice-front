@@ -20,5 +20,12 @@ const CommunityController = {
 			id
 		}
 		socket.emit('community_create', community);
+	},
+
+	loads: (id) => {
+		const community = {
+			id
+		}
+		socket.emit('community_loads');
 	}
 }

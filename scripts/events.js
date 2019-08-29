@@ -69,6 +69,5 @@ function onSubmitCommunityCreation(e){
       community[key] = value;
   });
   community["owner"] = State.user
-  console.log(State.user)
-  //CommunityController.create(community)
+  CommunityController.create(community)
 }
