@@ -12,6 +12,25 @@
     align-items: center;
 }
 
-h1, h3{
+h1, h2{
     text-align: center;
 }
+
+.buttons-community{
+	display:flex;
+	justify-content: center;
+}
+
+.buttons-community button{
+	margin: 10px;
+	padding: 5px;
+	height:50px;
+	width: 100px;
+}
+
+#community-form{
+	text-align: center;
+}
+
+
+
