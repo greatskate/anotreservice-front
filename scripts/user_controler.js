@@ -6,6 +6,7 @@ const UserController = {
 	},
 	login: (user) => {
 		socket.emit('user_login', user);
+	  //login();
 	},
 	logout: (user) => {
 		socket.emit('user_logout', user);

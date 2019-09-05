@@ -1,3 +1,4 @@
+/* eslint-disable */
 const INPUT_IDS = {
   firstname: 'register-firstName',
   lastname: 'register-name',
@@ -11,10 +12,8 @@ const INPUT_IDS = {
 
 const handleRegisterSubmit = () => {
   const values = Object.entries(INPUT_IDS).reduce((acc, [key, id]) => {
-    console.log(id, document.getElementById(id));
     acc[key] = document.getElementById(id).value;
     return acc;
   }, {});
-  console.log(values);
   UserController.register(values);
 }

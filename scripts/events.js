@@ -8,6 +8,9 @@ function initEvent() {
 	buttonSwitchRegister = document.getElementById('button_switch_register')
 
 	buttonSwitchRegister.addEventListener('click', switchRegister)
+
+	buttonSwitchLogin = document.getElementById('return-register-dialog');
+	buttonSwitchLogin.addEventListener('click', switchLogin)
 	formRegister = document.getElementById('form_register');
 	formRegister.addEventListener('submit', onSubmitRegister)
 

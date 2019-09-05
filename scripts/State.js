@@ -5,7 +5,7 @@ const State={
 }
 function init() {
 	initNav();
-	initCommunities();
+  initCommunity();
 	logged = false;
 	loggedsElement = document.getElementsByClassName('logged');
 	unloggedsElement = document.getElementsByClassName('unlogged');

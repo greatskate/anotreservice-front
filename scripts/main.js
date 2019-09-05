@@ -10,12 +10,29 @@ function initMain(){
 		console.log('Received connection callback.');
 		onClickLogin();
     State.user = user
+    loggedEvent()
+	});
+	socket.on('registred', (user) => {
+		onClickLogin();
+    console.log(user)
+    State.user = user
+    loggedEvent()
 	});
   socket.on("communities_load",(communities)=>{
     console.log(communities)
     initCommunities(communities)
   })
-  socket.emit("communities_load")
+  socket.on("communities_admin_load",(communities)=>{
+    initCommunitiesAdmin(communities)
+  })
+
+  socket.on("community_loaded",(community)=>{
+    console.log(community)
+    nameCommunityProfil.innerHTML = community.name;
+    nameOwnerCommunityProfil.innerHTML = community.owner.firstname;
+    squareCommunityProfil.innerHTML = community.square
+    memberNumberCommunityProfil.innerHTML = community.members_number
+  })
   //load();
 	logout();
   //initLogin()

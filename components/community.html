@@ -1,35 +1,19 @@
-<style>
-
-#form-service{
-
-	width: 500px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}	
-
-</style>
 
 
 <form method="" action="" id="community-form">
-<i class="material-icons">arrow_back</i><h1>Jardin et Potager</h1>
-<h2>Publier un message sur <br/>"Jardin et Potager"</h2>
+<i class="material-icons">arrow_back</i>
+<h1><span id="name_community_profil">Jardin et Potager</span></h1>
 
-<div class="search-on-category">
-<input class="input-home" type="search" placeholder="Entrez un mot-clef" name="the_search">
-<button type="button-home">Rechercher</button>
-</div>
-
-<h4>Gérant de la communeauté : Sébastien</h4>
-<h4><i class="material-icons">location_on </i> Lille</h4>
-<h4><i class="material-icons">members </i>Membres dans la communeautés : 256</h4>
+<h4>Gérant de la communauté : <span id="name_owner_community_profil">Sébastien</span></h4>
+<h4><i class="material-icons">location_on </i><span id="square_community_profil"> Lille</span></h4>
+<h4><i class="material-icons">members </i>Membres dans la communauté : <span id="members_number_community_profil">256</span></h4>
 
 <div class="buttons-community">
 <button type="button">Publier un service</button>
 <button type="button">Publier un message</button>
 <button type="button">Voir les membres</button>
 </div>
-<ul>
+<ul id="list_members_community_profil">
 		<li class="member">
 			<div class="member-infos">
 		<img src="images/avatar-trois.png" alt="" />
