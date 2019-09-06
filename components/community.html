@@ -4,9 +4,35 @@
 <i class="material-icons">arrow_back</i>
 <h1><span id="name_community_profil">Jardin et Potager</span></h1>
 
-<h4>Gérant de la communauté : <span id="name_owner_community_profil">Sébastien</span></h4>
-<h4><i class="material-icons">location_on </i><span id="square_community_profil"> Lille</span></h4>
-<h4><i class="material-icons">members </i>Membres dans la communauté : <span id="members_number_community_profil">256</span></h4>
+<div class="container-user">
+	<div class="card">
+	  <div class="card-header">
+		<h1 class="card-title">Gérant</h1>
+		<p class="card-subtitle">
+		  Antoine Petit
+		</p>
+		<img id="img-user" title="profile" alt="card-img" src="./images/potager.png">
+	  </div>
+	  <div class="card-body">
+		<p id="service-description">
+			Fiches jardinage du potager. Débuter un potager est une étape fascinante dans la vie d'un jardinier.
+			 Choisir la méthode d'exploitation, classique, en lasagnes, en carrés, cultiver en bio, 
+			 pratiquer la rotation des cultures sont autant de possibilités à explorer.
+  
+		</p>
+	  </div>
+	  <div class="card-footer">
+		 <p>Membres : 256<i class="material-icons">person</i>
+  Lille<i class="material-icons">location_on</i>
+		 </p>
+  
+	  </div>
+	</div>
+  </div>
+
+<!--<h4>Gérant de la communauté : <span id="name_owner_community_profil">Sébastien</span></h4>
+<h4>Membres dans la communauté : <span id="members_number_community_profil">256</span></h4>
+<h4><span id="square_community_profil"> Lille</span><i class="material-icons location">location_on</i></h4>-->
 
 <div class="buttons-community">
 <button type="button">Publier un service</button>
@@ -14,20 +40,53 @@
 <button type="button">Voir les membres</button>
 </div>
 <ul id="list_members_community_profil">
-		<li class="member">
-			<div class="member-infos">
-		<img src="images/avatar-trois.png" alt="" />
-		<p>lorem ipsumdsmlsdmsldmsldsmlmsdlsm</p>
-		<p><i class="material-icons">star_rate</i>Note</p>
-		<p><i class="material-icons">person_pin</i>Profil</p>
-			</div>
-		</li>
+	
 </ul>
 
-<input type="radio" name="messages" value="messages">Messages
-<input type="radio" name="annonces" value="annonces">Annonces
+<div class="action-communaute">
+<ul>
+	<li>
+	  <input type="radio" name="messages">
+	  <label for="message">Messages</label>
+	  
+	  <div class="check"></div>
+	</li>
+	
+	<li>
+	  <input type="radio" name="annonces">
+	  <label for="annonce">Annonces</label>
+	  
+	  <div class="check"><div class="inside"></div></div>
+	</li>
+  </ul>
+</div>
 
-<h5>Les derniers messages</h5>
+<h3>Les derniers messages</h3>
 
-/* reprendre bloc homepage */
+<div class="container-user">
+	<div class="card">
+	  <div class="card-header">
+		<h1 class="card-title">Aurélie</h1>
+		<p class="card-subtitle">
+		  Jardinière passionnée
+		</p>
+		<img id="img-user" title="profile" alt="card-img" src="./images/avatar-trois.png">
+	  </div>
+	  <div class="card-body">
+		<p id="service-description">
+		  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+		   Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
+		   assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+		   Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique.
+  
+		</p>
+	  </div>
+	  <div class="card-footer">
+		 <p>1 heure<i class="material-icons">hourglass_full</i>
+  Lille<i class="material-icons">location_on</i>
+		 </p>
+  
+	  </div>
+	</div>
+  </div>
 </form>
