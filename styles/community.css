@@ -39,3 +39,26 @@ h1, h2{
 	flex-direction: column;
 	justify-content: center;
 }
+
+h4{
+	text-align: center;
+}
+
+.action-communaute{
+	justify-content: center;
+	padding: 50px;
+	background: #256273;
+	display: flex;
+}
+
+.action-communaute ul{
+	list-style: none;
+	display: flex;
+}
+
+.action-communaute h3{
+	padding-left: 30px;
+}
+
+
+  

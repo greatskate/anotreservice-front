@@ -34,3 +34,10 @@
 	padding: 4px 14px;
 	box-shadow: 0 10px 25px rgba(29,29,31,0.15);
 }
+
+.buttons-community button:hover{
+	color: white;
+	background-color: #eb6555;
+	transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
