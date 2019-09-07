@@ -3,8 +3,8 @@ const CommunityController = {
 	create: (community) => {
 		socket.emit('community_create', community);
 	},
-	join: (community) => {
-		socket.emit('community_join', community);
+	join: (id,user) => {
+		socket.emit('community_join', {id:id,user:user});
 	},
 	update: (community) => {
 		socket.emit('community_update', community);

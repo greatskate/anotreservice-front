@@ -120,7 +120,9 @@ button{
   padding: 20px 20px 20px 20px;
   color: black;
 }
-
+.jardins-et-potager p.description{
+  width:100%;
+}
 .jardins-et-potager p{
   text-align: left;
   padding-left: 8px;

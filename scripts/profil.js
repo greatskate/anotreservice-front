@@ -8,10 +8,12 @@ function initProfil(){
   listCommunitiesMemberUserProfil = document.getElementById("list_communities_member_user_profil");
 
   nameUserProfil.innerHTML = State.user.firstname
-  squareUserProfil.innerHTML = State.user.square
+  squareUserProfil.innerHTML = State.user.city
   buttonSwitchAdminUserProfil.addEventListener("click",switchAdminUserProfil)
   buttonSwitchMemberUserProfil.addEventListener("click",switchMemberUserProfil)
   switchAdminUserProfil()
+  socket.emit("communities_admin_load",State.user)
+  socket.emit("communities_member_load",State.user)
 }
 
 function switchMemberUserProfil(){

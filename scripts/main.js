@@ -23,7 +23,12 @@ function initMain(){
     initCommunities(communities)
   })
   socket.on("communities_admin_load",(communities)=>{
+    console.log(communities);
     initCommunitiesAdmin(communities)
+  })
+  socket.on("communities_member_load",(communities)=>{
+    console.log(communities);
+    initCommunitiesMember(communities)
   })
 
   socket.on("community_loaded",(community)=>{
@@ -32,6 +37,13 @@ function initMain(){
     nameOwnerCommunityProfil.innerHTML = community.owner.firstname;
     squareCommunityProfil.innerHTML = community.square
     memberNumberCommunityProfil.innerHTML = community.members_number
+    buttonJoinCommunityProfil.dataset.id = community.id;
+    if (community.isIn){
+      buttonJoinCommunityProfil.style.display="none";
+    }
+    else{
+      buttonJoinCommunityProfil.style.display="";
+    }
   })
   //load();
 	logout();
